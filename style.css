@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    font-family: '나눔고딕';   
+    font-size: 12px;
+    line-height: 22px;
+    color: #000;
+}
+
+/* header */
+#header{
+    border-bottom: 3px solid #990000;
+}
+.header_inner{
+    width: 1000px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;/*기준*/
+}
+.h_left{
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.h_left li{
+    float: left;
+    padding-right: 10px;
+}
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -135px;
+}
+.h_right{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.h_right li{
+    float: left;
+    padding-left: 10px;
+}
+.nav{
+    position: absolute;
+    top: 88px;
+    width: 981px;
+    left: 50%;
+    margin-left: -490.5px;
+}
+.nav> li{
+    float: left;
+}
+.nav> li> a{
+    padding: 20px 40px;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Arial';
+}
+.nav> li> a:hover{
+    color: #990000;
+}
+
+/* 서브메뉴 꾸미기 */
+.sub li a{
+    display: block;  
+    padding: 10px 0; /*좌우 여백은 위에 메뉴에 영향을 줄 수 있으므로 주기 않기!!*/
+    background-color: #990000;
+    color: #fff;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.sub li a:hover{
+    background-color: #6d0101;
+}
+
+/* 서브메뉴 없애기 */
+.sub{
+    display: none;
+}
+/* 서브메뉴 나타나게 만들기 */
+.nav li:hover .sub{
+    display: block;
+}
+
+/* 배너 */
+#banner img{
+    display: block;
+    width: 100%;/*큰 배너 이미지의 경우 꼭 너비를 100%로 해주기!*/
+}
+
+/* 콘텐츠 */
+#content{
+    width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+}
+.left{
+    width: 240px;
+    height: 280px;
+    background: url(./images/img_franchise.jpg);
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.center{
+    width: 520px;
+    height: 280px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.center li{
+    float: left;
+    width: calc(100%/3);/*계산기(계산식)*/
+    text-align: center;
+    margin-top: 50px;
+}
+.line{
+    border-left: 1px dotted #ccc;
+    border-right: 1px dotted #ccc;
+    box-sizing: border-box;
+}
+.right{
+    float: right;
+    width: 240px;
+    height: 280px;
+    background: url(./images/img_store.jpg);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.img1{
+    float: left;
+    margin-top: 30px;
+}
+.img2{
+    float: right;
+    margin-top: 30px;
+}
+
+/* 푸터 */
+#footer{
+    background: url(./images/bg_footer.gif);
+}
+.footer_inner{
+    width: 1000px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.footer_inner li{
+    float: left;
+    padding: 0 20px 30px 0;
+}
+.footer_inner li a{
+    color: #fff;
+    font-weight: bold;
+}
+.footer_inner li a:hover{
+    text-decoration: underline;
+}
+.footer_inner p{
+    clear: both;
+    color: #ccc;
+}
